@@ -33,4 +33,16 @@ body .container .content {
   flex-direction: column;
   padding: 0 20px;
   border-radius: 15px;
+  gap: 10px;
+}
+body .container .content::before {
+  content: "";
+  width: 1px;
+  height: 1px;
+  position: relative;
+  bottom: -247px;
+  left: 115px;
+  border-top: 15px solid var(--color1);
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
 }/*# sourceMappingURL=styles.css.map */
