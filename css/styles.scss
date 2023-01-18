@@ -1,5 +1,5 @@
 :root{
-    --color1 : #464444;
+    --color1 : #1b45df57;
     --color2 : #374356;
     --color3 : #0fc505;
     --color4 : #c50505;
@@ -34,6 +34,9 @@ body{
             padding: 0 20px;
             border-radius: 15px;
             gap: 10px;
+            transition: 0.5s ease;
+            box-shadow: 0 0 10px 1px #797979;
+            visibility: hidden;
 
             &::before{
                 content: "";
@@ -45,6 +48,32 @@ body{
                 border-top: 15px solid var(--color1);
                 border-left: 15px solid transparent;  
                 border-right: 15px solid transparent;
+            }
+        }
+        .toggle-button{
+            background: var(--color3);
+            width: 40px;
+            height: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            cursor: pointer;
+            transition: 1s ease;
+            position: relative;
+            top: -150px;
+        }
+
+        &.active{
+            .content{
+                visibility: visible;
+                transition: 1s ease;
+            }
+
+            .toggle-button{
+                top: 15px;
+                background-color: var(--color4);
+                transition: 1s ease;
             }
         }
     }
