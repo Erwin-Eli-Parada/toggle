@@ -34,7 +34,6 @@ body .container .content {
   padding: 0 20px;
   border-radius: 15px;
   gap: 10px;
-  transition: 0.5s ease;
   box-shadow: 0 0 10px 1px #797979;
   visibility: hidden;
 }
@@ -64,7 +63,7 @@ body .container .toggle-button {
 }
 body .container.active .content {
   visibility: visible;
-  transition: 1s ease;
+  transition: 1s ease-in;
 }
 body .container.active .toggle-button {
   top: 15px;
